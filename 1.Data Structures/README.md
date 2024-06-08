@@ -1,4 +1,4 @@
-### **What's a Data Structure?**
+## **What's a Data Structure?**
 
 Organization of Data: Data structures help in organizing data in a way that it can be efficiently used and modified. The organization can be in the form of arrays, linked lists, trees, graphs, hash tables, etc.
 
