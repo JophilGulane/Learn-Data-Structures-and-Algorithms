@@ -1,6 +1,8 @@
 # Data Structures Guide
 
-Data structures are fundamental components in computer science, essential for storing and organizing data efficiently. This guide will cover various types of data structures, their properties, operations, and applications.
+Data structures are fundamental components in computer science, essential for storing and organizing data efficiently. 
+
+This guide will cover various types of data structures, their properties, operations, and applications.
 
 ## Table of Contents
 
