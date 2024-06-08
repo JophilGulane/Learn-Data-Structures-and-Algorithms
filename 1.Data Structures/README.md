@@ -27,7 +27,7 @@ Data structures are specialized formats for organizing, processing, retrieving, 
 
 ### Arrays
 
-Arrays are collections of elements identified by index or key.
+> Arrays are collections of elements identified by index or key.
 
 - **Properties**:
   - Fixed size.
@@ -43,21 +43,24 @@ Arrays are collections of elements identified by index or key.
 array = [1, 2, 3, 4, 5]
 print(array[2])  # Output: 3
 ```
-Linked Lists
-Linked Lists are sequences of nodes where each node points to the next node.
+### Linked Lists
 
-Types:
+> Linked Lists are sequences of nodes where each node points to the next node.
 
-Singly Linked List: Each node points to the next node.
-Doubly Linked List: Each node points to both the next and previous nodes.
-Properties:
+**Types:**
 
-Dynamic size.
-Ease of insertion/deletion.
-Common Operations:
+- Singly Linked List: Each node points to the next node.
+- Doubly Linked List: Each node points to both the next and previous nodes.
+  
+**Properties:**
 
-Traversal.
-Insertion and deletion.
+- Dynamic size.
+- Ease of insertion/deletion.
+  
+**Common Operations:**
+
+- Traversal.
+- Insertion and deletion.
 
 ```python
 # Example in Python
@@ -76,17 +79,18 @@ class LinkedList:
         self.head = new_node
 ```
 
-Stacks
-Stacks are collections that follow the Last In, First Out (LIFO) principle.
+### Stacks
+> Stacks are collections that follow the Last In, First Out (LIFO) principle.
 
-Properties:
+**Properties:**
 
-Elements added and removed from the top.
-Common Operations:
+- Elements added and removed from the top.
+- 
+**Common Operations:**
 
-Push (add element).
-Pop (remove element).
-Peek (view top element).
+- Push (add element).
+- Pop (remove element).
+- Peek (view top element).
 
 ```python
 # Example in Python
@@ -96,17 +100,18 @@ stack.append(2)
 stack.pop()  # Output: 2
 ```
 
-Queues
-Queues are collections that follow the First In, First Out (FIFO) principle.
+### Queues
+> Queues are collections that follow the First In, First Out (FIFO) principle.
 
-Properties:
+**Properties:**
 
-Elements added at the rear and removed from the front.
-Common Operations:
+- Elements added at the rear and removed from the front.
+  
+**Common Operations:**
 
-Enqueue (add element).
-Dequeue (remove element).
-Peek (view front element).
+- Enqueue (add element).
+- Dequeue (remove element).
+- Peek (view front element).
 
 ```python
 # Example in Python
@@ -117,22 +122,24 @@ queue.append(2)
 queue.popleft()  # Output: 1
 ```
 
-Trees
-Trees are hierarchical structures with root and child nodes.
+### Trees
+> Trees are hierarchical structures with root and child nodes.
 
-Types:
+**Types:**
 
-Binary Tree: Each node has at most two children.
-Binary Search Tree (BST): Left child < parent < right child.
-AVL Tree: Self-balancing BST.
-Heap: Complete binary tree with min-heap or max-heap property.
-Properties:
+- Binary Tree: Each node has at most two children.
+- Binary Search Tree (BST): Left child < parent < right child.
+- AVL Tree: Self-balancing BST.
+- Heap: Complete binary tree with min-heap or max-heap property.
+  
+**Properties:**
 
-Hierarchical.
-Efficient for search and sort operations.
-Common Operations:
+- Hierarchical.
+- Efficient for search and sort operations.
+  
+**Common Operations:**
 
-Insertion, deletion, traversal (in-order, pre-order, post-order).
+- Insertion, deletion, traversal (in-order, pre-order, post-order).
 
 ```python
 # Example in Python
@@ -149,22 +156,24 @@ def inorder_traversal(root):
         inorder_traversal(root.right)
 ```
 
-Graphs
-Graphs are networks of nodes connected by edges.
+### Graphs
+> Graphs are networks of nodes connected by edges.
 
-Types:
+**Types:**
 
-Directed Graph: Edges have directions.
-Undirected Graph: Edges do not have directions.
-Weighted Graph: Edges have weights.
-Properties:
+- Directed Graph: Edges have directions.
+- Undirected Graph: Edges do not have directions.
+- Weighted Graph: Edges have weights.
 
-Nodes (vertices) connected by edges.
-Used to represent networks.
-Common Operations:
+**Properties:**
 
-Traversal (BFS, DFS).
-Pathfinding (Dijkstra's, A*).
+- Nodes (vertices) connected by edges.
+- Used to represent networks.
+  
+**Common Operations:**
+
+- Traversal (BFS, DFS).
+- Pathfinding (Dijkstra's, A*).
 
 ```python
 # Example in Python
@@ -188,16 +197,17 @@ class Graph:
                 queue.extend([x for x in self.graph[vertex] if x not in visited])
 ```
 
-Hash Tables
-Hash Tables use hash functions to map keys to values.
+### Hash Tables
+> Hash Tables use hash functions to map keys to values.
 
-Properties:
+**Properties:**
 
-Key-value pairs.
-Efficient for lookups and insertions.
-Common Operations:
+- Key-value pairs.
+- Efficient for lookups and insertions.
 
-Insertion, deletion, search.
+**Common Operations:**
+
+- Insertion, deletion, search.
 
 ```python
 # Example in Python
@@ -205,43 +215,47 @@ hash_table = {}
 hash_table["key1"] = "value1"
 print(hash_table["key1"])  # Output: value1
 ```
-Operations on Data Structures
-Insertion: Adding a new element.
-Deletion: Removing an existing element.
-Traversal: Accessing each element in a specific order.
-Searching: Finding the location of a specific element.
-Sorting: Arranging elements in a certain order.
-Applications of Data Structures
-Arrays and Linked Lists: Used for implementing other data structures and algorithms.
-Stacks: Used in function call management, expression evaluation, and backtracking algorithms.
-Queues: Used in scheduling processes, managing resources in networks.
-Trees: Used in databases, file systems, and organizing hierarchical data.
-Graphs: Used in network analysis, social network connections, and pathfinding algorithms.
-Hash Tables: Used in database indexing, caches, and associative arrays.
-Performance Analysis
-Understanding the efficiency of data structures is crucial for optimizing performance.
+### Operations on Data Structures
+- Insertion: Adding a new element.
+- Deletion: Removing an existing element.
+- Traversal: Accessing each element in a specific order.
+- Searching: Finding the location of a specific element.
+- Sorting: Arranging elements in a certain order.
 
-Big O Notation: Used to describe the worst-case complexity of an algorithm.
-O(1): Constant time.
-O(n): Linear time.
-O(log n): Logarithmic time.
-O(n^2): Quadratic time.
-Getting Started
-Familiarize with Basic Concepts: Understand the basics of data structures and their real-world applications.
-Learn and Implement: Study various algorithms and data structures, and implement them in a programming language of your choice.
-Practice Problem-Solving: Solve problems on platforms like LeetCode, HackerRank, and CodeSignal to apply what you’ve learned.
-Analyze Performance: Learn about Big O notation to analyze the efficiency of your algorithms and understand time and space complexities.
-Additional Resources
-Books:
+### Applications of Data Structures
+- Arrays and Linked Lists: Used for implementing other data structures and algorithms.
+- Stacks: Used in function call management, expression evaluation, and backtracking algorithms.
+- Queues: Used in scheduling processes, managing resources in networks.
+- Trees: Used in databases, file systems, and organizing hierarchical data.
+- Graphs: Used in network analysis, social network connections, and pathfinding algorithms.
+- Hash Tables: Used in database indexing, caches, and associative arrays.
 
-"Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
-"Data Structures and Algorithm Analysis in C++" by Mark Allen Weiss.
-Online Courses:
+### Performance Analysis
+> Understanding the efficiency of data structures is crucial for optimizing performance.
 
-Coursera: "Data Structures and Algorithm Specialization" by University of California San Diego & National Research University Higher School of Economics.
+- Big O Notation: Used to describe the worst-case complexity of an algorithm.
+- O(1): Constant time.
+- O(n): Linear time.
+- O(log n): Logarithmic time.
+- O(n^2): Quadratic time.
+
+### Getting Started
+- Familiarize with Basic Concepts: Understand the basics of data structures and their real-world applications.
+- Learn and Implement: Study various algorithms and data structures, and implement them in a programming language of your choice.
+- Practice Problem-Solving: Solve problems on platforms like LeetCode, HackerRank, and CodeSignal to apply what you’ve learned.
+- Analyze Performance: Learn about Big O notation to analyze the efficiency of your algorithms and understand time and space complexities.
+- Additional Resources
+
+**Books:**
+
+- "Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+- "Data Structures and Algorithm Analysis in C++" by Mark Allen Weiss.
+**Online Courses:**
+
+- Coursera: "Data Structures and Algorithm Specialization" by University of California San Diego & National Research University Higher School of Economics.
 edX: "Algorithms and Data Structures" by Microsoft.
-Practice Platforms:
+**Practice Platforms:**
 
-LeetCode
-HackerRank
-CodeSignal
+- LeetCode
+- HackerRank
+- CodeSignal
