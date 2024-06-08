@@ -259,6 +259,6 @@ edX: "Algorithms and Data Structures" by Microsoft.
 
 **Practice Platforms:**
 
-- [LeetCode] (https://leetcode.com)
-- [HackerRank] (https://www.hackerrank.com)
-- [CodeSignal] (https://codesignal.com)
+- [LeetCode](https://leetcode.com)
+- [HackerRank](https://www.hackerrank.com)
+- [CodeSignal](https://codesignal.com)
