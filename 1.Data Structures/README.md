@@ -256,8 +256,9 @@ print(hash_table["key1"])  # Output: value1
 
 - Coursera: "Data Structures and Algorithm Specialization" by University of California San Diego & National Research University Higher School of Economics.
 edX: "Algorithms and Data Structures" by Microsoft.
+
 **Practice Platforms:**
 
-- LeetCode
-- HackerRank
-- CodeSignal
+- [LeetCode] (https://leetcode.com)
+- [HackerRank] (https://www.hackerrank.com)
+- [CodeSignal] (https://codesignal.com)
