@@ -42,6 +42,7 @@ Arrays are collections of elements identified by index or key.
 # Example in Python
 array = [1, 2, 3, 4, 5]
 print(array[2])  # Output: 3
+```
 Linked Lists
 Linked Lists are sequences of nodes where each node points to the next node.
 
@@ -57,8 +58,8 @@ Common Operations:
 
 Traversal.
 Insertion and deletion.
-python
-Copy code
+
+```python
 # Example in Python
 class Node:
     def __init__(self, data):
@@ -73,6 +74,8 @@ class LinkedList:
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
+```
+
 Stacks
 Stacks are collections that follow the Last In, First Out (LIFO) principle.
 
@@ -84,13 +87,15 @@ Common Operations:
 Push (add element).
 Pop (remove element).
 Peek (view top element).
-python
-Copy code
+
+```python
 # Example in Python
 stack = []
 stack.append(1)
 stack.append(2)
 stack.pop()  # Output: 2
+```
+
 Queues
 Queues are collections that follow the First In, First Out (FIFO) principle.
 
@@ -102,14 +107,16 @@ Common Operations:
 Enqueue (add element).
 Dequeue (remove element).
 Peek (view front element).
-python
-Copy code
+
+```python
 # Example in Python
 from collections import deque
 queue = deque()
 queue.append(1)
 queue.append(2)
 queue.popleft()  # Output: 1
+```
+
 Trees
 Trees are hierarchical structures with root and child nodes.
 
@@ -126,8 +133,8 @@ Efficient for search and sort operations.
 Common Operations:
 
 Insertion, deletion, traversal (in-order, pre-order, post-order).
-python
-Copy code
+
+```python
 # Example in Python
 class TreeNode:
     def __init__(self, key):
@@ -140,6 +147,8 @@ def inorder_traversal(root):
         inorder_traversal(root.left)
         print(root.val),
         inorder_traversal(root.right)
+```
+
 Graphs
 Graphs are networks of nodes connected by edges.
 
@@ -156,8 +165,8 @@ Common Operations:
 
 Traversal (BFS, DFS).
 Pathfinding (Dijkstra's, A*).
-python
-Copy code
+
+```python
 # Example in Python
 from collections import defaultdict
 
@@ -177,6 +186,8 @@ class Graph:
                 print(vertex)
                 visited.add(vertex)
                 queue.extend([x for x in self.graph[vertex] if x not in visited])
+```
+
 Hash Tables
 Hash Tables use hash functions to map keys to values.
 
@@ -187,12 +198,13 @@ Efficient for lookups and insertions.
 Common Operations:
 
 Insertion, deletion, search.
-python
-Copy code
+
+```python
 # Example in Python
 hash_table = {}
 hash_table["key1"] = "value1"
 print(hash_table["key1"])  # Output: value1
+```
 Operations on Data Structures
 Insertion: Adding a new element.
 Deletion: Removing an existing element.
