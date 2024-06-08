@@ -2,7 +2,7 @@
 
 Organization of Data: Data structures help in organizing data in a way that it can be efficiently used and modified. The organization can be in the form of arrays, linked lists, trees, graphs, hash tables, etc.
 
-##Types of Data Structures:
+## Types of Data Structures:
 
   + Linear Data Structures: Elements are arranged in a sequential manner. Examples include arrays, linked lists, stacks, and queues.
   
