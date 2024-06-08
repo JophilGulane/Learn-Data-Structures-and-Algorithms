@@ -21,11 +21,11 @@ This guide will cover various types of data structures, their properties, operat
 6. [Getting Started](#getting-started)
 7. [Additional Resources](#additional-resources)
 
-## Introduction
+## 1. Introduction
 
 Data structures are specialized formats for organizing, processing, retrieving, and storing data. They are critical for designing efficient algorithms and software systems. This guide will introduce various data structures, their operations, and practical applications.
 
-## Types of Data Structures
+## 2. Types of Data Structures
 
 ### Arrays
 
@@ -217,14 +217,17 @@ hash_table = {}
 hash_table["key1"] = "value1"
 print(hash_table["key1"])  # Output: value1
 ```
-### Operations on Data Structures
+
+
+
+### 3. Operations on Data Structures
 - Insertion: Adding a new element.
 - Deletion: Removing an existing element.
 - Traversal: Accessing each element in a specific order.
 - Searching: Finding the location of a specific element.
 - Sorting: Arranging elements in a certain order.
 
-### Applications of Data Structures
+### 4. Applications of Data Structures
 - Arrays and Linked Lists: Used for implementing other data structures and algorithms.
 - Stacks: Used in function call management, expression evaluation, and backtracking algorithms.
 - Queues: Used in scheduling processes, managing resources in networks.
@@ -232,7 +235,7 @@ print(hash_table["key1"])  # Output: value1
 - Graphs: Used in network analysis, social network connections, and pathfinding algorithms.
 - Hash Tables: Used in database indexing, caches, and associative arrays.
 
-### Performance Analysis
+### 5. Performance Analysis
 > Understanding the efficiency of data structures is crucial for optimizing performance.
 
 - Big O Notation: Used to describe the worst-case complexity of an algorithm.
@@ -241,12 +244,13 @@ print(hash_table["key1"])  # Output: value1
 - O(log n): Logarithmic time.
 - O(n^2): Quadratic time.
 
-### Getting Started
+### 6. Getting Started
 - Familiarize with Basic Concepts: Understand the basics of data structures and their real-world applications.
 - Learn and Implement: Study various algorithms and data structures, and implement them in a programming language of your choice.
 - Practice Problem-Solving: Solve problems on platforms like LeetCode, HackerRank, and CodeSignal to apply what you’ve learned.
 - Analyze Performance: Learn about Big O notation to analyze the efficiency of your algorithms and understand time and space complexities.
-- Additional Resources
+  
+### 7. Additional Resources
 
 **Books:**
 
