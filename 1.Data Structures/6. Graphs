@@ -1,0 +1,19 @@
+# Example in Python
+from collections import defaultdict
+
+class Graph:
+    def __init__(self):
+        self.graph = defaultdict(list)
+
+    def add_edge(self, u, v):
+        self.graph[u].append(v)
+
+    def bfs(self, start):
+        visited = set()
+        queue = [start]
+        while queue:
+            vertex = queue.pop(0)
+            if vertex not in visited:
+                print(vertex)
+                visited.add(vertex)
+                queue.extend([x for x in self.graph[vertex] if x not in visited])
