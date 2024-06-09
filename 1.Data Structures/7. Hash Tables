@@ -1,0 +1,4 @@
+# Example in Python
+hash_table = {}
+hash_table["key1"] = "value1"
+print(hash_table["key1"])  # Output: value1
