@@ -62,4 +62,95 @@ def binary_search(arr, target):
             high = mid - 1
     return -1
 ```
+### Linear Time - O(n)
+An algorithm runs in linear time if its execution time increases linearly with the input size.
 
+```python
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+```
+### Linearithmic Time - O(n log n)
+An algorithm runs in linearithmic time if its execution time increases in proportion to 𝑛 log 𝑛.
+
+```python
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        L = arr[:mid]
+        R = arr[mid:]
+
+        merge_sort(L)
+        merge_sort(R)
+
+        i = j = k = 0
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+```
+
+### Quadratic Time - O(n^2)
+An algorithm runs in quadratic time if its execution time is proportional to the square of the input size.
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+```
+
+### Cubic Time - O(n^3)
+An algorithm runs in cubic time if its execution time is proportional to the cube of the input size.
+
+``` python
+def three_sum(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(i+1, n):
+            for k in range(j+1, n):
+                if arr[i] + arr[j] + arr[k] == 0:
+                    print(arr[i], arr[j], arr[k])
+```
+
+### Exponential Time - O(2^n)
+An algorithm runs in exponential time if its execution time doubles with each additional input element.
+
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+```
+
+### Factorial Time - O(n!)
+An algorithm runs in factorial time if its execution time is proportional to the factorial of the input size.
+
+```python
+def permutations(string):
+    if len(string) == 1:
+        return [string]
+    perms = []
+    for i, char in enumerate(string):
+        for perm in permutations(string[:i] + string[i+1:]):
+            perms.append(char + perm)
+    return perms
+```
