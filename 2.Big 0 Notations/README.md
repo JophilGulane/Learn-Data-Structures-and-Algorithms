@@ -155,9 +155,9 @@ def permutations(string):
     return perms
 ```
 ### Common Misconceptions
-Big O is not about exact timings: It describes the growth rate, not the actual time.
-Big O is about the upper bound: It provides the worst-case scenario.
-Big O ignores constants and lower-order terms: Focuses on the most significant term as input size grows.
+- Big O is not about exact timings: It describes the growth rate, not the actual time.
+- Big O is about the upper bound: It provides the worst-case scenario.
+- Big O ignores constants and lower-order terms: Focuses on the most significant term as input size grows.
 Analyzing Algorithms
 Worst-case Analysis
 Describes the maximum amount of time an algorithm can take.
