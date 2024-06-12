@@ -38,9 +38,28 @@ Big O Notation provides a high-level understanding of an algorithm's efficiency 
 
 ### Constant Time - O(1)
 
-An algorithm runs in constant time if its execution time does not change regardless of the input size.
+An algorithm runs in constant time if
+its execution time does not change regardless of the input size.
 
 ```python
 def get_first_element(array):
     return array[0]
 ```
+### Logarithmic Time - O(log n)
+
+An algorithm runs in logarithmic time if its execution time increases logarithmically as the input size increases.
+
+```python
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+```
+
