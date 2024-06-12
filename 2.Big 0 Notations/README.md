@@ -1,45 +1,46 @@
-# Data Structures Guide
+# Big O Notation Guide
 
-Data structures are fundamental components in computer science, essential for storing and organizing data efficiently. This guide will cover various types of data structures, their properties, operations, and applications.
+Big O Notation is a mathematical notation used to describe the performance or complexity of an algorithm. It gives an upper bound on the time or space complexity of an algorithm, allowing for the comparison of the efficiency of different algorithms.
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Types of Data Structures](#types-of-data-structures)
-   - [Arrays](#arrays)
-   - [Linked Lists](#linked-lists)
-   - [Stacks](#stacks)
-   - [Queues](#queues)
-   - [Trees](#trees)
-   - [Graphs](#graphs)
-   - [Hash Tables](#hash-tables)
-3. [Operations on Data Structures](#operations-on-data-structures)
-4. [Applications of Data Structures](#applications-of-data-structures)
-5. [Performance Analysis](#performance-analysis)
-6. [Getting Started](#getting-started)
-7. [Additional Resources](#additional-resources)
+2. [Why Big O Notation?](#why-big-o-notation)
+3. [Big O Notation Basics](#big-o-notation-basics)
+   - [Constant Time - O(1)](#constant-time---o1)
+   - [Logarithmic Time - O(log n)](#logarithmic-time---olog-n)
+   - [Linear Time - O(n)](#linear-time---on)
+   - [Linearithmic Time - O(n log n)](#linearithmic-time---on-log-n)
+   - [Quadratic Time - O(n^2)](#quadratic-time---on2)
+   - [Cubic Time - O(n^3)](#cubic-time---on3)
+   - [Exponential Time - O(2^n)](#exponential-time---o2n)
+   - [Factorial Time - O(n!)](#factorial-time---on)
+4. [Common Misconceptions](#common-misconceptions)
+5. [Analyzing Algorithms](#analyzing-algorithms)
+   - [Worst-case Analysis](#worst-case-analysis)
+   - [Best-case Analysis](#best-case-analysis)
+   - [Average-case Analysis](#average-case-analysis)
+6. [Space Complexity](#space-complexity)
+7. [Examples](#examples)
+8. [Additional Resources](#additional-resources)
 
 ## Introduction
 
-Data structures are specialized formats for organizing, processing, retrieving, and storing data. They are critical for designing efficient algorithms and software systems. This guide will introduce various data structures, their operations, and practical applications.
+Big O Notation provides a high-level understanding of an algorithm's efficiency by describing how its runtime or space requirements grow as the input size grows. This guide will cover the basics of Big O Notation, different types of complexities, and how to analyze them.
 
-## Types of Data Structures
+## Why Big O Notation?
 
-### Arrays
+- **Predict Performance**: Helps predict how an algorithm will perform as the input size increases.
+- **Compare Algorithms**: Allows comparison of different algorithms based on their efficiency.
+- **Optimize Code**: Guides developers in optimizing code for better performance.
 
-Arrays are collections of elements identified by index or key.
+## Big O Notation Basics
 
-- **Properties**:
-  - Fixed size.
-  - Elements of the same type.
-  - Random access by index.
+### Constant Time - O(1)
 
-- **Common Operations**:
-  - Accessing elements: `array[index]`
-  - Insertion and deletion (typically requires shifting elements).
+An algorithm runs in constant time if its execution time does not change regardless of the input size.
 
 ```python
-# Example in Python
-array = [1, 2, 3, 4, 5]
-print(array[2])  # Output: 3
+def get_first_element(array):
+    return array[0]
 ```
