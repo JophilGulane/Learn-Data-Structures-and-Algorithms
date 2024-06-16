@@ -168,7 +168,7 @@ Describes the minimum amount of time an algorithm can take.
 Average-case Analysis
 Describes the expected amount of time an algorithm can take, averaged over all possible inputs.
 
-Space Complexity
+### Space Complexity
 Space complexity describes the amount of memory an algorithm uses relative to the input size.
 
 O(1): Constant space.
