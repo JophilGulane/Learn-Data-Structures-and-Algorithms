@@ -231,6 +231,7 @@ def merge_sort(arr):
 - edX: "Algorithmic Design and Techniques" by UC San Diego.
 ## Practice Platforms:
 
-- LeetCode
-- HackerRank
-- CodeSignal
+- [LeetCode](https://leetcode.com)
+- [HackerRank](https://www.hackerrank.com)
+- [CodeSignal](https://codesignal.com)
+
