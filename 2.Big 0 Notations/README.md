@@ -158,20 +158,22 @@ def permutations(string):
 - Big O is not about exact timings: It describes the growth rate, not the actual time.
 - Big O is about the upper bound: It provides the worst-case scenario.
 - Big O ignores constants and lower-order terms: Focuses on the most significant term as input size grows.
+  
 ### Algorithms
-Worst-case Analysis
-Describes the maximum amount of time an algorithm can take.
+## Worst-case Analysis
+> Describes the maximum amount of time an algorithm can take.
 
-Best-case Analysis
-Describes the minimum amount of time an algorithm can take.
+## Best-case Analysis
+> Describes the minimum amount of time an algorithm can take.
 
-Average-case Analysis
-Describes the expected amount of time an algorithm can take, averaged over all possible inputs.
+## Average-case Analysis
+> Describes the expected amount of time an algorithm can take, averaged over all possible inputs.
 
 ### Space Complexity
 Space complexity describes the amount of memory an algorithm uses relative to the input size.
 
-O(1): Constant space.
-O(n): Linear space.
-O(n^2): Quadratic space.
-Examples
+- O(1): Constant space.
+- O(n): Linear space.
+- O(n^2): Quadratic space.
+  
+### Examples
