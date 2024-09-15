@@ -1,4 +1,4 @@
-     # Introduction to Learning Data Structures and Algorithms
+      # Introduction to Learning Data Structures and Algorithms
 
 In the world of computer science, data structures and algorithms form the backbone of efficient problem-solving and software development. Whether you're developing a simple application or designing complex systems, a solid understanding of these fundamental concepts is crucial. This introduction aims to set the stage for your journey into the fascinating world of data structures and algorithms, providing a foundation that will enhance your programming skills and computational thinking.
 
